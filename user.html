@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>Welcome page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> 
+        <script type="text/javascript">
+        $(document).ready(()=>{
+          $('#slide-toggle').click(()=>{
+            $('#toggle-content').slideToggle('slow');
+        });
+        });
+        </script>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            
+            <a class="navbar-brand" href="#">GRILL ANYWHERE</a>
+            <div class="input-group col-sm-2">
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>Choose...</option>
+                  <option value="1">Kolkata</option>
+                  <option value="2">Bangalore</option>
+                  <option value="3">Mumbai</option>
+                </select>
+                <div class="input-group-append">
+                  <label class="input-group-text" for="inputGroupSelect02">City</label>
+                </div>
+              </div>
+              
+            
+        </nav>
+        <div class="row">
+          <div class="menu1">
+            <img src="usericon.png" width="100px" height="100px" /><br/><br/>
+            <h5>Welcome</h4><br/><br/>
+              <ul class="list-group">
+                <li class="list-group-item bg-dark">
+                  
+                  <a href="#" class="">My Profile</a>
+                  
+                </li>
+                <li class="list-group-item bg-dark">
+                      
+                      <a href="#" class="">Order</a>
+                      
+                </li>  
+                <li class="list-group-item bg-dark">
+                      
+                    <a href="#" class="">My Wishlist</a>
+                    
+              </li>  
+              <li class="list-group-item bg-dark">
+                      
+                  <a href="#" class="">My Wallet</a>
+                  
+            </li>               
+            <li class="list-group-item bg-dark">
+                      
+                <a href="#" class="">Sign Out</a>
+                
+          </li>  
+              </ul>
+              
+            </div>
+      <div class="col-sm-10">
+            <div class="card">
+              
+              <input type="button" id='slide-toggle' value='Filter' class="btn btn-info" style="width:100px;margin-left:1210px"/>
+              
+              
+              <div style='display:none' id='toggle-content'>
+                  <div class="row">
+                  <span class="input-group col-sm-3">
+                      <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Select Griller Type...</option>
+                        <option value="1">Type1</option>
+                        <option value="2">Type2</option>
+                        <option value="3">Type3</option>
+                      </select>
+                      
+                    </span>
+                    <span class="col-sm-8">
+                    Price Range <input type="range" class="custom-range" name="amount" min="500" max="10000"/>
+                    </span>
+                    </div>
+              </div>
+              
+            </div>
+        </div>
+        </div>
+        
+    </body>
+</html>
+<style>
+.menu1{
+  display: inline-block;
+  width:200px;
+  height: 800px;
+  background-color:black;
+}
+.col-sm-2{
+  width: 200px;
+}
+img{
+  margin: 30 10 0 40px;
+}
+
+</style>
