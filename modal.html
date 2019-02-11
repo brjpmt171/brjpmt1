@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="modal.js"></script> 
+    </head>
+    <body onload="main()">
+        <div class="container">
+                <button type="button" class="btn btn-primary" data-toggle="modal" onclick="clear()" data-target="#popMessage">
+                        Sign In
+                </button>
+            <!--Modal-->
+            <div class="modal" id="popMessage">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Login</h3>
+                        </div>
+                        <div class="modal-body">
+                                <div class="col-sm-8">
+                                        <form>
+                                            <div class='form-group'>
+                                                    <label for='name'>Name</label>
+                                                    <input type='text' class='form-control' id='name' name='name'/>
+                                                    
+                                                    <label for='address'>Address</label>
+                                                    <input type='textarea' class='form-control' id='address' name='address'/>
+                                                    <label for='phoneno'>Mobile No</label>
+                                                    <input type='number' class='form-control' id='phoneno' name='phoneno'/>
+                                                    <label for='email'>Email</label>
+                                                    <input type='email' class='form-control' id='email' name='email'/>
+                                            </div>
+                                        </form>
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                                <input type="submit" class='btn btn-primary' value='Login' onclick="savedata()"/>
+                                <input type="submit" class="btn btn-secondary" data-dismiss="modal" value="Close" onclick="showdata()"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+            <div id="show">
+                <div class="card">
+                    <div class="card-header">ID Card</div>
+                    <div class="card-body">
+                        <img src="usericon.png" style="width:100px;height:100px;" />
+                        <span id="name"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
