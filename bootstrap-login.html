@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>  
+    </head>
+    <body>
+        <div class="container">
+            <ul class="nav nav-tabs"  role="tab-list">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#content">Content</a>
+                </li>
+            </ul>
+            <br/>
+            <div class="tab-content">
+                
+                <div id="login" class="container tab-pane active">
+                    <h3 class="card-header">Login Page</h3>
+                
+                    <div class="col-sm-4 offset-sm-4">
+                    <form>
+                        <div class='form-group'>
+                                <label for='username'>UserName</label>
+                                <input type='text' class='form-control' id='username' name='username'/>
+                                
+                                <label for='password'>Password</label>
+                                <input type='password' class='form-control' id='password' name='password'/>
+                                <input type="submit" class='btn btn-primary' value='Login'/>
+                                <input type="reset" class='btn btn-warning' value='Refresh'/>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                <div id="content" class="container tab-pane">
+                    <h3 class="card-header">Bootstrap Tutorial</h3><br/><br/>
+                    <div class="card-body">
+                    <div class="container-fluid bg-2 text-center">
+                            <h3>Content</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </div>
+                          
+                          <div class="container-fluid bg-3 text-center">
+                        
+                            <pre>Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam,
+                                 quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                                 ex ea commodo consequat.</pre>
+                          </div><br/><br/><br/>
+                          </div>>
+                          <div class="card-footer">
+                            
+                                <h5 class="bg-light text-right">by Someone.....</h5>
+                              </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<style>
+</style>
